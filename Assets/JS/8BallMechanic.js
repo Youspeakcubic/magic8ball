@@ -1,11 +1,11 @@
 let eightText = document.getElementById('8ballText');
 
-let getRandomInt = (7) => {
+let getRandomInt = (max) => {
   return Math.floor(Math.random() * max);
 }
 
 let eightBallQ = () =>{
-  switch (getRandomInt) {
+  switch (getRandomInt(7)) {
     case 1:
     console.log("1")
     eightText.innerHTML = "It will be so";

@@ -1,0 +1,28 @@
+html{
+  background-color: #3a0ca3;
+  text-align: center;
+}
+
+button{
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1rem;
+  padding: 2% 5%;
+  margin:10%;
+}
+
+.EightBallContainer {
+  margin:0 auto 0 auto;
+ background-color: black;
+ color:white;
+ width:500px;
+ height:500px;
+ border-radius: 50%;
+ box-shadow: 5px 10px #480ca8;
+}
+.EightballInner{
+  margin: auto;
+  background-color:#4361ee;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}
