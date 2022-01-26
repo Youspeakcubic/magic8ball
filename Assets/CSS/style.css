@@ -1,28 +1,57 @@
-html{
+html {
   background-color: #3a0ca3;
   text-align: center;
 }
 
-button{
+button {
   font-family: 'Luxurious Roman', cursive;
   font-size: 1rem;
   padding: 2% 5%;
-  margin:10%;
+  margin: 10%;
 }
 
 .EightBallContainer {
-  margin:0 auto 0 auto;
- background-color: black;
- color:white;
- width:500px;
- height:500px;
- border-radius: 50%;
- box-shadow: 5px 10px #480ca8;
-}
-.EightballInner{
-  margin: auto;
-  background-color:#4361ee;
-  width:150px;
-  height:150px;
+  margin: 0 auto 0 auto;
+  background: radial-gradient(circle at 30vmin 30vmin, #444, #000);
+  color: white;
+  width: 1000px;
+  height: 1000px;
   border-radius: 50%;
+  box-shadow: 5px 10px #480ca8;
+}
+
+.highlight {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30vmin 30vmin, #f4f1de, #444);
+  position: relative;
+  left: 20%;
+  top: 20%;
+}
+
+.EightballInner {
+  position: relative;
+  top: 15%;
+  border: 8px solid #212f45;
+  margin: auto;
+  background: radial-gradient(circle at 30vmin 30vmin, #4361ee, #000);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#EightballTextContainer {
+  margin: 35% auto;
+  width: 0;
+  height: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-top: 125px solid #480ca8;
+}
+.eightballTextCont2{
+  width:100px;
+  position: relative;
+  bottom:125px;
+  right:45px;
 }

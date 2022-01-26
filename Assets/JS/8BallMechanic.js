@@ -1,4 +1,4 @@
-let eightText = document.getElementById('8ballText');
+let eightText = document.getElementById('EightballText');
 
 let getRandomInt = (max) => {
   return Math.floor(Math.random() * max);
