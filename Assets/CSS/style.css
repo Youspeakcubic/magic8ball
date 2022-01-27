@@ -1,15 +1,19 @@
 html {
   background-color: #3a0ca3;
   text-align: center;
+  overflow-x: hidden;
 }
 
-button {
+h1, h2, h3 {
+  color: white;
   font-family: 'Luxurious Roman', cursive;
-  font-size: 1rem;
-  padding: 2% 5%;
-  margin: 10%;
 }
-
+.instructions{
+  position: relative;
+  left:35%;
+  margin-top: 10%;
+  transform:rotate(45deg);
+}
 .EightBallContainer {
   margin: 0 auto 0 auto;
   background: radial-gradient(circle at 30vmin 30vmin, #444, #000);
@@ -48,10 +52,64 @@ button {
   border-left: 125px solid transparent;
   border-right: 125px solid transparent;
   border-top: 125px solid #480ca8;
+  animation: floating 6s linear infinite;
 }
-.eightballTextCont2{
-  width:100px;
+
+.eightballTextCont2 {
+  width: 100px;
   position: relative;
-  bottom:125px;
-  right:45px;
+  bottom: 125px;
+  right: 45px;
+}
+
+/* animations */
+@keyframes shake {
+  0% {
+    filter: blur(4px);
+    margin-top: 0;
+  }
+
+  25% {
+    filter: blur(1.5rem);
+    margin-top: 200px;
+  }
+
+  50% {
+    filter: blur(4px);
+    margin-top: 350px;
+  }
+
+  75% {
+    filter: blur(1.5rem);
+    margin-top: 200px;
+  }
+
+  100% {
+    filter: blur(4px);
+    margin-top: 0;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: rotateZ(0) rotateY(20deg) translateZ(6.8vmin) rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(1turn) rotateY(20deg) translateZ(6.8vmin) rotateZ(-1turn);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
